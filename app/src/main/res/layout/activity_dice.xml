@@ -65,6 +65,7 @@
                 android:orientation="horizontal">
 
                 <!-- Select how big the dice should be -->
+                <!-- TODO- change layout (thumb blocks size of dize when pressing upbutton -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="107dp"
