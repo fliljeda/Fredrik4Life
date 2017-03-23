@@ -25,14 +25,21 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"></View>
+                android:layout_weight="1"></View>
 
             <ImageButton
                 style="@style/main_menu_button"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/dice_icon_new"
-                android:text="@string/dice_activity_button_name"
+                android:onClick="startNumberConverterActivity"/>
+
+
+            <ImageButton
+                style="@style/main_menu_button"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/dice_icon_new"
                 android:onClick="startDiceActivity"/>
 
 
