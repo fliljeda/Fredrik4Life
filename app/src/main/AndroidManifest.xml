@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DiceActivity" />
-        <activity android:name=".NumberConverterActivity"></activity>
+        <activity android:name=".NumberConverterActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
     </application>
 
 </manifest>
