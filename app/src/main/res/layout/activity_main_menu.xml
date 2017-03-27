@@ -31,7 +31,7 @@
                 style="@style/main_menu_button"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/dice_icon_new"
+                android:src="@drawable/icon_number_converter"
                 android:onClick="startNumberConverterActivity"/>
 
 

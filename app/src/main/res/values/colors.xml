@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="convert_background">#495159</color>
+    <color name="convert_label">#e0e0e0</color>
+    <color name="convert_value">#e0e0e0</color>
+    <color name="convert_edit_hint">#CCe0e0e0</color>
 </resources>

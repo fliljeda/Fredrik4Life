@@ -96,6 +96,7 @@ public class NumberConverterActivity extends AppCompatActivity {
             int charValue = getDecValueFromHex(field.charAt(i));
             if(charValue == -1){
                 decValue.setText("Unable to convert");
+                return;
             }
             value |= ((long)charValue << (fieldsize-i-1)*4); //Shifting hexvalues into place
         }
