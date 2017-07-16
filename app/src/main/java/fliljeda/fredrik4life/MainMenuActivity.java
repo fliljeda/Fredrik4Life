@@ -24,4 +24,9 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NumberConverterActivity.class);
         startActivity(intent);
     }
+
+    public void startRandomNumberActivity(View view){
+        Intent intent = new Intent(this,RandomNumberActivity.class);
+        startActivity(intent);
+    }
 }

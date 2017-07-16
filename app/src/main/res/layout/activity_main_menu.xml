@@ -25,7 +25,15 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"></View>
+                android:layout_weight="0"></View>
+
+            <ImageButton
+                style="@style/main_menu_button"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/random_questionmark"
+                android:onClick="startRandomNumberActivity"/>
 
             <ImageButton
                 style="@style/main_menu_button"

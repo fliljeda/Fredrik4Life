@@ -16,8 +16,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".DiceActivity" />
-        <activity android:name=".NumberConverterActivity"
-            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".NumberConverterActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".RandomNumberActivity"></activity>
     </application>
 
 </manifest>
