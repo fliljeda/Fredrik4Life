@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fliljeda.fredrik4life">
 
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon_fredrik_4_life"
@@ -20,6 +21,15 @@
             android:name=".NumberConverterActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".RandomNumberActivity"></activity>
+
+
+        <receiver android:name="RandomNumberWidgetProvider">
+            <intent-filter>
+                <action android:name="android.intent.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/randomnumber_appwidget_info"></meta-data>
+        </receiver>
+
     </application>
 
 </manifest>

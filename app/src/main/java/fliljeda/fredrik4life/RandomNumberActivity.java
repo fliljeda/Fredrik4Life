@@ -1,6 +1,8 @@
 package fliljeda.fredrik4life;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,15 +44,36 @@ public class RandomNumberActivity extends AppCompatActivity {
             //Feedback: too big
             return;
         }
-        if(high < low || low < 0){
-            output_target.setText("");
-            sendAlert("Bad range", "Small number is bigger than the big number");
-            return;
+
+        output_target.setText("" + getRandomNumber(low,high));
+        if(high < low){
+            input_to.setText("" + (low+1));
         }
+    }
+
+    /**
+     * Follows specific rules, if low > high then high gets set to low+1
+     */
+    public static int getRandomNumber(int low, int high){
+        if(high < low){
+            high = low+1;
+        }
+        boolean negative = true;
+        int shift = 0;
+        if(negative = low < 0){
+            shift = low;
+            low -= low;
+            high -= low;
+        }
+        Random random = new Random();
 
         int r = random.nextInt(high-low + 1) + low;
-        output_target.setText("" + r);
+        if(negative){
+            r -= shift;
+        }
+        return r;
     }
+
 
     private void sendAlert(String title, String message){
         AlertDialog alertDialog = new AlertDialog.Builder(RandomNumberActivity.this).create();

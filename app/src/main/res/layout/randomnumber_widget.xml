@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#66666e">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/widget_text_random"
+            android:textSize="20dp"
+            android:textColor="#e6e6e9"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/widget_button_decrease_low"
+                android:text="-"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/widget_text_low"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/widget_button_increase_low"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/widget_button_decrease_high"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/widget_text_high"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/widget_button_increase_high"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Click"
+            android:id="@+id/widget_button_roll"/>
+    </LinearLayout>
+
+</FrameLayout>
